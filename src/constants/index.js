@@ -16,12 +16,11 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
+  Universal,
+  Wevise,
+  UCF,
+  Valet,
+  UPTAI,
   tripguide,
   threejs,
 } from "../assets";
@@ -33,7 +32,11 @@ export const navLinks = [
   },
   {
     id: "work",
-    title: "Work",
+    title: "Experience",
+  },
+  {
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -118,55 +121,37 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Software Engineering Intern",
+    company_name: "Universal Studios",
+    icon: Universal,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "May 2023 - Aug 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Collaborated in a cohesive Kanban team to develop, maintain, and support various B2B applications that collectively facilitate over a million ticket sales annually.",
+      "Contributed to the successful migration of Universal Orlando's payment system accross all applications to a new platform.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "React Developer",
+    company_name: "Wevise",
+    icon: Wevise,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Jun 2021 - Sep 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Played an active role in developing the front-end application for Wevise.org, a pioneering company focused on fostering widespread access to on-demand mentorship in the tech industry.",
+      "Worked alongside a highly motivated group of individuals to develop key parts of the front-end using React and Tailwind.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "BS in Computer Science",
+    company_name: "University of Central Florida",
+    icon: UCF,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Aug 2021 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "BS in Computer Science with a 4.0 Major GPA.",
+      "Dedicated Member of the Phi Eta Sigma National Honor Society, the nation's oldest and largest honor society dedicated to encouraging academic excellence.",
+      "Avid member of KnightHacks programming club at UCF since 2021. Attended weekly meetings and collaborated with a diverse group of members on semester long projects.",
     ],
   },
 ];
@@ -202,7 +187,7 @@ const projects = [
   {
     name: "Valet Database",
     description:
-      "Build an easy to use CRUD app that assists valet systems by storing data entries of cars. Users could create, search, edit and delete each Car's Make, Model, License plate number and parking spot.",
+      "Developed a simple CRUD application designed to enhance valet systems by securely storing and managing car data entries. Enabled users to effortlessly create, search, edit, and delete essential information such as Car Make, Model, License Plate Number, and parking spot details.",
     tags: [
       {
         name: "ASP.Net",
@@ -213,50 +198,50 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    //source_code_link: "https://github.com/",
+    image: Valet,
+    source_code_link: "https://github.com/Yuqi2002/Valet_CRUD_app",
   },
   {
-    name: "Wevise",
+    name: "UPT AI",
     description:
-      "A web application that helps mentees connect and network with mentors in tech industry's top companies. Wevise is a non-profit that aims to provide more free on-demand mentoring for students in tech.",
+      "Created an AI chatbot trained on extensive Universal Studios Orlando documentation for onboarding inquiries. It efficiently provides answers and assists experienced team members in quickly finding specific information from lengthy documents spanning over 1000 pages.",
     tags: [
       {
-        name: "Next.js",
+        name: "Pinecone",
         color: "green-text-gradient",
       },
       {
-        name: "restapi",
+        name: "LangChain",
         color: "pink-text-gradient",
       },
       {
-        name: "Tailwind.css",
+        name: "Typescript",
         color: "blue-text-gradient",
       },
     ],
-    image: jobit,
-    //source_code_link: "https://github.com/",
+    image: UPTAI,
+    source_code_link: "https://github.com/Yuqi2002/UPT_AI",
   },
   {
     name: "AI Email Assistant",
     description:
-      "Using LangChain and OpenAI API, this Strealit app helps users compose clear, concise and well-structured emails. When prompted, this assistant composes emails based on the user's preferred tone and dialect.",
+      "Utilizing LangChain and OpenAI API, this Streamlit application assists users in composing professional and well-structured emails. This innovative assistant generates email content tailored to the user's preferred tone and dialect, ensuring clarity and conciseness.",
     tags: [
       {
-        name: "nextjs",
+        name: "LangChain",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "ChatGPT",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Streamlit",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    //source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Yuqi2002/Email_Assistant",
   },
 ];
 
