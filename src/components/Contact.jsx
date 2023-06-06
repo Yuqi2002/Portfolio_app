@@ -7,6 +7,7 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -30,11 +31,10 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+//qTvnd-uHQimToScoU
+//template_8uzxp1r
+//service_9b3smac
+    emailjs.send('service_9b3smac','template_8uzxp1r',
         {
           from_name: form.name,
           to_name: "Yuqi Zhou",
@@ -42,7 +42,7 @@ const Contact = () => {
           to_email: "yuqi.zhou@knights.ucf.edu",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        'qTvnd-uHQimToScoU'
       )
       .then(
         () => {
@@ -75,10 +75,69 @@ const Contact = () => {
         <p className={styles.sectionSubText}> Let's get in touch!</p>
         <h3 className={styles.sectionHeadText}>Contact</h3>
 
+        <button
+            type = "button"
+            style={{
+              transition: 'background-color 0.3s, transform 0.3s',
+              color: 'white',
+              padding: '10px 20px',
+              fontSize: '16px',
+            }}
+            onMouseEnter={(e) => {
+              e.target.style.transform = 'scale(1.1)';
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.transform = 'scale(1)';
+            }}
+            className='bg-grey-100 py-3 px-5 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            onClick={() => window.open('https://github.com/Yuqi2002', '_blank')}
+          >
+            {"Github"}
+          </button>&nbsp;&nbsp;&nbsp;
+
+          <button
+            type="button"
+            className='bg-grey-100 py-3 px-5 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            style={{
+              transition: 'background-color 0.3s, transform 0.3s',
+              color: 'white',
+              padding: '10px 20px',
+              fontSize: '16px',
+            }}
+            onMouseEnter={(e) => {
+              e.target.style.transform = 'scale(1.1)';
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.transform = 'scale(1)';
+            }}
+            onClick={() => window.open('https://www.linkedin.com/in/yuqizhou2002/', '_blank')}
+          >
+            {"Linkedin"}
+          </button>&nbsp;&nbsp;&nbsp;
+
+          <button
+            role = "link"
+            className='bg-grey-100 py-3 px-5 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            style={{
+              transition: 'background-color 0.3s, transform 0.3s',
+              color: 'white',
+              padding: '10px 20px',
+              fontSize: '16px',
+            }}
+            onMouseEnter={(e) => {
+              e.target.style.transform = 'scale(1.1)';
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.transform = 'scale(1)';
+            }}
+            onClick={() => window.open('https://drive.google.com/file/d/17gd7sRib6kBKoPl8MbOZf4X8HTRCsEM8/view', '_blank')}>
+            {"Resume"}
+          </button>
+
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
+          className='mt-8 flex flex-col gap-6'
         >
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
@@ -117,6 +176,18 @@ const Contact = () => {
           <button
             type='submit'
             className='bg-grey-100 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            style={{
+              transition: 'background-color 0.3s, transform 0.3s',
+              color: 'white',
+              padding: '10px 20px',
+              fontSize: '16px',
+            }}
+            onMouseEnter={(e) => {
+              e.target.style.transform = 'scale(1.1)';
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.transform = 'scale(1)';
+            }}
           >
             {loading ? "Sending..." : "Send"}
           </button>

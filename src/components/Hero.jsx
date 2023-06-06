@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[350px] text-center`}
+        className={`absolute inset-0 top-[35%] text-center`}
       >
         <div>
           <h1 className={`${styles.heroHeadText} text-[#f9fbfb]`}>
