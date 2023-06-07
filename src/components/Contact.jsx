@@ -82,6 +82,7 @@ const Contact = () => {
               color: 'white',
               padding: '10px 20px',
               fontSize: '16px',
+              margin: '8px 0'
             }}
             onMouseEnter={(e) => {
               e.target.style.transform = 'scale(1.1)';
@@ -103,6 +104,7 @@ const Contact = () => {
               color: 'white',
               padding: '10px 20px',
               fontSize: '16px',
+              margin: '8px 0'
             }}
             onMouseEnter={(e) => {
               e.target.style.transform = 'scale(1.1)';
@@ -123,6 +125,7 @@ const Contact = () => {
               color: 'white',
               padding: '10px 20px',
               fontSize: '16px',
+              margin: '8px 0'
             }}
             onMouseEnter={(e) => {
               e.target.style.transform = 'scale(1.1)';

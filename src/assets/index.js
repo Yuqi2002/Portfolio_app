@@ -26,7 +26,7 @@ import Universal from "./company/Universal.png";
 import Wevise from "./company/Wevise.png";
 
 
-import Valet from "./Valet.png";
+import Valet from "./Vaelt.png";
 import UPTAI from "./UPTAI.png";
 import tripguide from "./tripguide.png";
 
