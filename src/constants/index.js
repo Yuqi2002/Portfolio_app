@@ -196,4 +196,4 @@ const projects = [
   },
 ];
 
-export {technologies, experiences, projects };
+export {technologies, experiences, projects};

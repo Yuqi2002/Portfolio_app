@@ -39,7 +39,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "Yuqi Zhou",
           from_email: form.email,
-          to_email: "yuqi.zhou@knights.ucf.edu",
+          to_email: "yuqizhou0330@gmail.com",
           message: form.message,
         },
         'qTvnd-uHQimToScoU'
