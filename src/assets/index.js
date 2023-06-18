@@ -6,7 +6,7 @@ import close from "./close.svg";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
-import git from "./tech/git.png";
+import git from "./tech/git.webp";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
@@ -17,8 +17,8 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import UCF from "./company/UCF.png";
-import Universal from "./company/Universal.png";
+import UCF from "./company/UCF.webp";
+import Universal from "./company/Universal.webp";
 import Wevise from "./company/Wevise.png";
 
 
