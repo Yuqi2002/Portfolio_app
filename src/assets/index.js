@@ -23,8 +23,8 @@ import Wevise from "./company/Wevise.png";
 
 
 import Valet from "./Vaelt.png";
-import UPTAI from "./UPTAI.png";
-import tripguide from "./tripguide.png";
+import SNOW from "./SNOW.png";
+import ReflectionBuddy from "./Reflection_buddy.png";
 
 export {
   logo,
@@ -48,6 +48,6 @@ export {
   Universal,
   Wevise,
   Valet,
-  UPTAI,
-  tripguide,
+  SNOW,
+  ReflectionBuddy,
 };

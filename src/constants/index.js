@@ -16,8 +16,8 @@ import {
   Wevise,
   UCF,
   Valet,
-  UPTAI,
-  tripguide,
+  SNOW,
+  ReflectionBuddy,
   threejs,
 } from "../assets";
 
@@ -136,6 +136,48 @@ const experiences = [
 
 const projects = [
   {
+    name: "ServiceNow AI Assistant",
+    description:
+      "Secured first place in the 2023 ServiceNow Hackathon by developing an AI-driven chatbot using Langchain and Pinecone. The chatbot excels at semantic searches within a company's incident management database, efficiently identifying past resolved issues and providing users with relevant incident details and solutions. Presented this solution to executive and AI senior management, and actively collaborated with the AI team to facilitate the implementation and scalability of the solution.",
+    tags: [
+      {
+        name: "Pinecone",
+        color: "green-text-gradient",
+      },
+      {
+        name: "LangChain",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: SNOW,
+    source_code_link: "https://github.com/Yuqi2002/ServiceNow_Incident_Assistant",
+  },
+  {
+    name: "Reflection Buddy",
+    description:
+      "Participated in the 2023 Pinecone Hackathon and collaborated in an enthusiastic and driven team to develop an AI chatbot utilizing Whisper AI, LangChain, and Pinecone. This chatbot serves as a personalized therapist, guiding users towards solutions through thoughtful follow-up questions rather than providing direct answers.",
+    tags: [
+      {
+        name: "LangChain",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ChatGPT",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Streamlit",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: ReflectionBuddy,
+    source_code_link: "https://github.com/DamDam98/ReflectionBuddy",
+  },
+  {
     name: "Valet Database",
     description:
       "Developed a simple CRUD application designed to enhance valet systems by securely storing and managing car data entries. Enabled users to effortlessly create, search, edit, and delete essential information such as Car Make, Model, License Plate Number, and parking spot details.",
@@ -151,48 +193,6 @@ const projects = [
     ],
     image: Valet,
     source_code_link: "https://github.com/Yuqi2002/Valet_CRUD_app",
-  },
-  {
-    name: "UPT AI",
-    description:
-      "Created an AI chatbot trained on extensive Universal Studios Orlando documentation for onboarding inquiries. It efficiently provides answers and assists experienced team members in quickly finding specific information from lengthy documents spanning over 1000 pages.",
-    tags: [
-      {
-        name: "Pinecone",
-        color: "green-text-gradient",
-      },
-      {
-        name: "LangChain",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Typescript",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: UPTAI,
-    source_code_link: "https://github.com/Yuqi2002/UPT_AI",
-  },
-  {
-    name: "AI Email Assistant",
-    description:
-      "Utilizing LangChain and OpenAI API, this Streamlit application assists users in composing professional and well-structured emails. This innovative assistant generates email content tailored to the user's preferred tone and dialect, ensuring clarity and conciseness.",
-    tags: [
-      {
-        name: "LangChain",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "ChatGPT",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Streamlit",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/Yuqi2002/Email_Assistant",
   },
 ];
 
