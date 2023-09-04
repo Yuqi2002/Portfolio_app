@@ -134,7 +134,7 @@ const Contact = () => {
             onMouseLeave={(e) => {
               e.target.style.transform = 'scale(1)';
             }}
-            onClick={() => window.open('https://drive.google.com/file/d/17gd7sRib6kBKoPl8MbOZf4X8HTRCsEM8/view', '_blank')}>
+            onClick={() => window.open('https://1drv.ms/b/s!AoqxA8wtWtotgts7lAc3vRIevQgXDQ?e=crjkER', '_blank')}>
             {"Resume"}
           </button>
 
