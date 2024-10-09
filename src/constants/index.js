@@ -1,4 +1,3 @@
-
 import {
   javascript,
   typescript,
@@ -13,11 +12,13 @@ import {
   figma,
   docker,
   Universal,
+  sn,
   Wevise,
   UCF,
   Valet,
   SNOW,
   ReflectionBuddy,
+  UCF_Attendance,
   threejs,
 } from "../assets";
 
@@ -42,23 +43,23 @@ export const navLinks = [
 
 const technologies = [
   {
-    name: "docker",//java
+    name: "docker", //java
     icon: docker,
   },
   {
-    name: "git", // C# 
+    name: "git", // C#
     icon: git,
   },
   {
-    name: "MongoDB",// C
+    name: "MongoDB", // C
     icon: mongodb,
   },
   {
-    name: "TypeScript",//python
+    name: "TypeScript", //python
     icon: typescript,
   },
   {
-    name: "Redux Toolkit",//langchain
+    name: "Redux Toolkit", //langchain
     icon: redux,
   },
   {
@@ -66,7 +67,7 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "figma",// angular
+    name: "figma", // angular
     icon: figma,
   },
   {
@@ -98,8 +99,19 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Associate Software Engineering Intern",
+    company_name: "ServiceNow - Santa Clara, CA",
+    icon: sn,
+    iconBg: "#042d43",
+    date: "May 2024 - Aug 2024",
+    points: [
+      "Developed a full-stack onboarding application using JavaScript, React, and ServiceNow tools, successfully deployed to production across multiple organizations; saving each organization an average of 25,000 hours and $2 million annually.",
+      "Collaborated across multiple teams to engineer REST APIs integrating NowLearning’s data with the onboarding application, enhancing data utility and accessibility; this teamwork and technical achievement supported ServiceNow’s 23% YOY growth in subscription revenues, contributing to $2,542 million earned in Q2 2024.",
+    ],
+  },
+  {
     title: "Software Engineering Intern",
-    company_name: "Universal Studios",
+    company_name: "Universal Studios - Orlando, FL",
     icon: Universal,
     iconBg: "#383E56",
     date: "May 2023 - Aug 2023",
@@ -110,7 +122,7 @@ const experiences = [
   },
   {
     title: "Front-end Developer",
-    company_name: "Wevise",
+    company_name: "Wevise - Remote",
     icon: Wevise,
     iconBg: "#E6DEDD",
     date: "Jun 2021 - Sep 2022",
@@ -121,7 +133,7 @@ const experiences = [
   },
   {
     title: "BS in Computer Science",
-    company_name: "University of Central Florida",
+    company_name: "University of Central Florida - Orlando, FL",
     icon: UCF,
     iconBg: "#383E56",
     date: "Aug 2021 - Present",
@@ -133,12 +145,37 @@ const experiences = [
   },
 ];
 
-
 const projects = [
+  {
+    name: "UCF Attendance",
+    description:
+      "Developed and maintained a streamlined attendance tracking application that improved accuracy and efficiency through QR code scanning, facial recognition, and location tracking. Collaborated within an AGILE team and worked with UCF professors to address key pain points in the current system, delivering user-centered solutions for over 68,000 students.",
+    tags: [
+      {
+        name: "DJango",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "AWS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Docker",
+        color: "green-text-gradient",
+      },
+    ],
+    image: UCF_Attendance,
+    image_link: "https://devpost.com/software/ucf-attendence",
+    source_code_link: "https://github.com/xhoantran/ucf-attendance",
+  },
   {
     name: "ServiceNow AI Assistant",
     description:
-      "Secured first place in the 2023 ServiceNow Hackathon by developing an AI-driven chatbot using Langchain and Pinecone. The chatbot excels at semantic searches within a company's incident management database, efficiently identifying past resolved issues and providing users with relevant incident details and solutions. Presented this solution to executive and AI senior management, and actively collaborated with the AI team to facilitate the implementation and scalability of the solution.",
+      "Awarded first place in the 2023 ServiceNow Hackathon by developing an AI-driven chatbot using Langchain and Pinecone. The chatbot excels at semantic searches within a company's incident management database, efficiently identifying past resolved issues and providing users with relevant incident details and solutions. Presented this solution to executive and AI senior management, and actively collaborated with the AI team to facilitate the implementation and scalability of the solution.",
     tags: [
       {
         name: "Pinecone",
@@ -154,7 +191,9 @@ const projects = [
       },
     ],
     image: SNOW,
-    source_code_link: "https://github.com/Yuqi2002/ServiceNow_Incident_Assistant",
+    image_link: "",
+    source_code_link:
+      "https://github.com/Yuqi2002/ServiceNow_Incident_Assistant",
   },
   {
     name: "Reflection Buddy",
@@ -175,6 +214,7 @@ const projects = [
       },
     ],
     image: ReflectionBuddy,
+    image_link: "",
     source_code_link: "https://github.com/DamDam98/ReflectionBuddy",
   },
   {
@@ -192,8 +232,9 @@ const projects = [
       },
     ],
     image: Valet,
+    image_link: "",
     source_code_link: "https://github.com/Yuqi2002/Valet_CRUD_app",
   },
 ];
 
-export {technologies, experiences, projects};
+export { technologies, experiences, projects };

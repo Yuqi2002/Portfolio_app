@@ -20,11 +20,12 @@ import threejs from "./tech/threejs.svg";
 import UCF from "./company/UCF.webp";
 import Universal from "./company/Universal.webp";
 import Wevise from "./company/Wevise.png";
-
+import sn from "./company/sn.png";
 
 import Valet from "./Vaelt.png";
 import SNOW from "./SNOW.png";
 import ReflectionBuddy from "./Reflection_buddy.png";
+import UCF_Attendance from "./UCF_Attendance.png";
 
 export {
   logo,
@@ -47,7 +48,9 @@ export {
   UCF,
   Universal,
   Wevise,
+  sn,
   Valet,
   SNOW,
   ReflectionBuddy,
+  UCF_Attendance,
 };
