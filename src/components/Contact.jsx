@@ -134,7 +134,7 @@ const Contact = () => {
             onMouseLeave={(e) => {
               e.target.style.transform = 'scale(1)';
             }}
-            onClick={() => window.open('https://1drv.ms/b/s!AoqxA8wtWtotgts7lAc3vRIevQgXDQ?e=crjkER', '_blank')}>
+            onClick={() => window.open('/Yuqi_Resume_2025.pdf', '_blank')}>
             {"Resume"}
           </button>
 
